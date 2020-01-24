@@ -35,7 +35,7 @@ $(document).ready(function (e) {
     // Sign-up for free and get your own key: https://graphhopper.com/#directions-api
     //
     var defaultKey = "c9b2b65d-be3d-4d96-b19c-48365a066ae3";
-    var profile = "car";
+    var profile = "foot";
 
     // create a routing client to fetch real routes, elevation.true is only supported for vehicle bike or foot
     var ghRouting = new GraphHopper.Routing({key: defaultKey, host: host, vehicle: profile, elevation: false});
@@ -47,7 +47,7 @@ $(document).ready(function (e) {
     });
     var ghMatrix = new GraphHopper.Matrix({key: defaultKey, host: host, vehicle: profile});
     var ghOptimization = new GraphHopper.Optimization({key: defaultKey, host: host, profile: profile});
-    var ghIsochrone = new GraphHopper.Isochrone({key: defaultKey, host: host, vehicle: profile});
+    var ghIsochrone = new GraphHopper.Isochrone({key: defaultKey, host: host, vehicle: profile, time_limit:(60*60)*19});
     var ghMapMatching = new GraphHopper.MapMatching({key: defaultKey, host: host, vehicle: profile});
 
 //    if (location.protocol === "file:") {
