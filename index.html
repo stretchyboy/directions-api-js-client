@@ -17,13 +17,13 @@
 
         <script type="text/javascript" src="js/demo.js?v=0.9.0-4"></script>
     </head>
-    <body>        
+    <body>
         <div id="main">
             <div id="logo" class="left">
                 <a href="https://graphhopper.com">
                     <img src="https://graphhopper.com/dashboard/img/header.png" alt="GraphHopper Logo"/>
                 </a>
-            </div>                        
+            </div>
 
             <div id="enter_key">
                 <div>
@@ -33,7 +33,7 @@
                 </div>
                 <ul id="custom_key_desc" class="small right">
                     <li><a
-                            href="https://graphhopper.com/#directions-api"><b>Free Sign Up</b></a></li>                    
+                            href="https://graphhopper.com/#directions-api"><b>Free Sign Up</b></a></li>
                     <li><a href="https://github.com/graphhopper/directions-api-js-client">Fork this at Github</a></li>
                     <li><a href="https://graphhopper.com/api/1/docs">Directions API Documentation</a></li>
                 </ul>
@@ -42,7 +42,7 @@
             <h2 class="left">Directions API Live Examples</h2>
 
             <div class="clear"></div>
-            <div class="horizontal">                
+            <div class="horizontal">
                 <ul id="mynavigation" class="tabs-menu">
                     <li class="current"><a href="#routing">Routing API</a></li>
                     <li><a href="#optimization">Route Optimization API</a></li>
@@ -50,20 +50,22 @@
                     <li><a href="#map-matching">Map Matching API</a></li>
                     <li><a href="#isochrone">Isochrone API</a></li>
                     <li><a href="#matrix">Matrix API</a></li>
-                </ul>                
+                </ul>
             </div>
 
             <div id="routing" class="tab-content">
 
                 <div style="padding-bottom: 10px;">
-                    The Routing API calculates the best path between two or more locations. 
-                    Calculate your own route via clicking on the map and try 
-                    <a href="https://graphhopper.com/maps">GraphHopper Maps</a> for a more advanced 
+                    The Routing API calculates the best path between two or more locations.
+                    Calculate your own route via clicking on the map and try
+                    <a href="https://graphhopper.com/maps">GraphHopper Maps</a> for a more advanced
                     routing demo.
                 </div>
                 <br/>
 
-                <div id="routing-response" style="float: right; padding-left: 20px;">
+                <div id="routing-response0" style="float: left; padding-left: 20px;">
+                </div>
+                  <div id="routing-response1" style="float: right; padding-left: 20px;">
 
                 </div>
                 <div id="routing-error" style="float: right; padding-left: 20px;">
@@ -74,6 +76,7 @@
                 <div id="instructions-header">
                     Click to see instructions for route
                     <div id="instructions" class="hide"></div>
+                    <div id="instructions2" class="hide"></div>
                 </div>
 
             </div>
@@ -99,13 +102,13 @@
 
                     <div id="example-list">
                         <div>
-                            <button id="set_example_vrp">Set Vehicle Routing</button>                
+                            <button id="set_example_vrp">Set Vehicle Routing</button>
                         </div>
                         <div>
-                            <button id="set_example_tsp">Set Salesman</button>       
+                            <button id="set_example_tsp">Set Salesman</button>
                         </div>
                         <div>
-                            <button id="set_example_tsp2">Set Open Salesman</button>       
+                            <button id="set_example_tsp2">Set Open Salesman</button>
                         </div>
                         <!--
                         <div>
@@ -144,7 +147,7 @@
             <div id="map-matching" class="tab-content">
                 <div>
                     The Map Matching API snaps measured GPS tracks to the digital road network using
-                    a certain vehicle. Click on the examples and zoom to see the detailed GPX track (black line) 
+                    a certain vehicle. Click on the examples and zoom to see the detailed GPX track (black line)
                     and what the Map Matching API calculated from it (green line).
                 </div>
                 <br/>
@@ -158,7 +161,7 @@
                 <div id="map-matching-error">
                 </div>
 
-                <div id="map-matching-map" style="cursor: default; height:600px; width: 1000px;"></div>                               
+                <div id="map-matching-map" style="cursor: default; height:600px; width: 1000px;"></div>
             </div>
 
             <div id="matrix" class="tab-content">
@@ -194,9 +197,9 @@
             <div id="isochrone" class="tab-content">
 
                 <div style="padding-bottom: 10px;">
-                    The Isochrone API calculates the reach of a location. 
+                    The Isochrone API calculates the reach of a location.
                     Calculate it by clicking on the map.
-                    The inner area is reachable within 5 minutes (green) and 
+                    The inner area is reachable within 5 minutes (green) and
                     the outer area is reachable within 10 minutes (blue).
                 </div>
                 <br/>
@@ -207,7 +210,7 @@
                 <div id="isochrone-error" style="float: right; padding-left: 20px;">
                 </div>
 
-                <div id="isochrone-map" style="cursor: default; height:600px; width: 1000px;"></div>               
+                <div id="isochrone-map" style="cursor: default; height:600px; width: 1000px;"></div>
             </div>
         </div>
 
